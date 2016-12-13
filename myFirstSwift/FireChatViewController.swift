@@ -10,13 +10,14 @@ import Photos
 import UIKit
 import SnapKit
 import Firebase
+import GoogleMobileAds
 
 class FireChatViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate,
 UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var ref: FIRDatabaseReference!
     var messages: [FIRDataSnapshot]! = []
-    var msglength: NSNumber = 10
+    var msglength: NSNumber = 11
     fileprivate var _refHandle: FIRDatabaseHandle!
     
     var storageRef: FIRStorageReference!
@@ -52,6 +53,8 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         return button
     }()
     
+    private let banner = GADBannerView()
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -79,9 +82,9 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         // Do any additional setup after loading the view.
         self.view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(self.view).offset(44)
-            make.left.equalTo(self.view).offset(33)
-            make.right.equalTo(self.view).offset(-33)
+            make.top.equalTo(self.view).offset(14)
+            make.left.equalTo(self.view).offset(13)
+            make.right.equalTo(self.view).offset(-13)
             make.height.equalTo(333)
         }
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "tableViewCell")
@@ -91,7 +94,7 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         self.view.addSubview(btnAddPhoto)
         btnAddPhoto.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(self.tableView.snp.bottom).offset(22)
-            make.left.equalTo(self.view).offset(33)
+            make.left.equalTo(self.view).offset(13)
             make.width.height.equalTo(33)
         }
         btnAddPhoto.addTarget(self, action: #selector(didTapAddPhoto(_:)), for: .touchUpInside)
@@ -109,10 +112,19 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         btnSend.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(self.tableView.snp.bottom).offset(22)
             make.left.equalTo(self.txtMessage.snp.right).offset(8)
-            make.right.equalTo(self.view).offset(-33)
+            make.right.equalTo(self.view).offset(-13)
             make.height.equalTo(33)
         }
         btnSend.addTarget(self, action: #selector(didSendMessage(_:)), for: .touchUpInside)
+        
+        
+        self.view.addSubview(banner)
+        banner.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(self.txtMessage.snp.bottom).offset(44)
+            make.left.equalTo(self.view).offset(55)
+            make.right.equalTo(self.view).offset(-55)
+            make.height.equalTo(77)
+        }
         
         configureDatabase()
         configureStorage()
@@ -142,9 +154,41 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
     }
     
     func configureRemoteConfig() {
+        remoteConfig = FIRRemoteConfig.remoteConfig()
+        // Create Remote Config Setting to enable developer mode.
+        // Fetching configs from the server is normally limited to 5 requests per hour.
+        // Enabling developer mode allows many more requests to be made per hour, so developers
+        // can test different config values during development.
+        let remoteConfigSettings = FIRRemoteConfigSettings(developerModeEnabled: true)
+        remoteConfig.configSettings = remoteConfigSettings!
     }
     
     func fetchConfig() {
+        var expirationDuration: Double = 3600
+        // If in developer mode cacheExpiration is set to 0 so each fetch will retrieve values from
+        // the server.
+        if (self.remoteConfig.configSettings.isDeveloperModeEnabled) {
+            expirationDuration = 0
+        }
+        
+        // cacheExpirationSeconds is set to cacheExpiration here, indicating that any previously
+        // fetched and cached config would be considered expired because it would have been fetched
+        // more than cacheExpiration seconds ago. Thus the next fetch would go to the server unless
+        // throttling is in progress. The default expiration duration is 43200 (12 hours).
+        remoteConfig.fetch(withExpirationDuration: expirationDuration) { (status, error) in
+            if (status == .success) {
+                print("Config fetched!")
+                self.remoteConfig.activateFetched()
+                let friendlyMsgLength = self.remoteConfig["friendly_msg_length"]
+                if (friendlyMsgLength.source != .static) {
+                    self.msglength = friendlyMsgLength.numberValue!
+                    print("Friendly msg length config: \(self.msglength)")
+                }
+            } else {
+                print("Config not fetched")
+                print("Error \(error)")
+            }
+        }
     }
     
     func didPressFreshConfig(_ sender: AnyObject) {
@@ -155,14 +199,15 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         let _ = textFieldShouldReturn(txtMessage)
     }
     
-    func didPressCrash(_ sender: AnyObject) {
-        fatalError()
-    }
-    
     func logViewLoaded() {
+        FIRCrashMessage("View loaded")
     }
     
     func loadAd() {
+        let kBannerAdUnitID = "ca-app-pub-3940256099942544/2934735716"
+        self.banner.adUnitID = kBannerAdUnitID
+        self.banner.rootViewController = self
+        self.banner.load(GADRequest())
     }
     
     // UITableViewDataSource protocol methods
@@ -176,12 +221,28 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         // Unpack message from Firebase DataSnapshot
         let messageSnapshot: FIRDataSnapshot! = self.messages[indexPath.row]
         let message = messageSnapshot.value as! Dictionary<String, String>
-        let name = message[Constants.MessageFields.name] as String!
-        let text = message[Constants.MessageFields.text] as String!
-        cell.textLabel?.text = name! + ": " + text!
-        cell.imageView?.image = UIImage(named: "ic_account_circle")
-        if let photoURL = message[Constants.MessageFields.photoURL], let URL = URL(string: photoURL), let data = try? Data(contentsOf: URL) {
-            cell.imageView?.image = UIImage(data: data)
+        let name = message[Constants.MessageFields.name] ?? ""
+        if let imageURL = message[Constants.MessageFields.imageURL] {
+            if imageURL.hasPrefix("gs://") {
+                FIRStorage.storage().reference(forURL: imageURL).data(withMaxSize: INT64_MAX){ (data, error) in
+                    if let error = error {
+                        print("Error downloading: \(error)")
+                        return
+                    }
+                    cell.imageView?.image = UIImage.init(data: data!)
+                    tableView.reloadData()
+                }
+            } else if let URL = URL(string: imageURL), let data = try? Data(contentsOf: URL) {
+                cell.imageView?.image = UIImage.init(data: data)
+            }
+            cell.textLabel?.text = "sent by: \(name)"
+        } else {
+            let text = message[Constants.MessageFields.text] ?? ""
+            cell.textLabel?.text = name + ": " + text
+            cell.imageView?.image = UIImage(named: "ic_account_circle")
+            if let photoURL = message[Constants.MessageFields.photoURL], let URL = URL(string: photoURL), let data = try? Data(contentsOf: URL) {
+                cell.imageView?.image = UIImage(data: data)
+            }
         }
         return cell
     }
@@ -194,6 +255,13 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         let data = [Constants.MessageFields.text: text]
         sendMessage(withData: data)
         return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
+        
+        let newLength = text.characters.count + string.characters.count - range.length
+        return newLength <= self.msglength.intValue // Bool
     }
     
     func sendMessage(withData data: [String: String]) {
@@ -228,15 +296,35 @@ UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDele
         if #available(iOS 8.0, *), let referenceURL = info[UIImagePickerControllerReferenceURL] {
             let assets = PHAsset.fetchAssets(withALAssetURLs: [referenceURL as! URL], options: nil)
             let asset = assets.firstObject
-            asset?.requestContentEditingInput(with: nil, completionHandler: { (contentEditingInput, info) in
+            asset?.requestContentEditingInput(with: nil, completionHandler: { [weak self] (contentEditingInput, info) in
                 let imageFile = contentEditingInput?.fullSizeImageURL
-                let filePath = "\(uid)/\(Int(Date.timeIntervalSinceReferenceDate * 1000))/\((referenceURL as AnyObject).lastPathComponent!)"
+                let filePath = "\(uid)/\(Int64(Date.timeIntervalSinceReferenceDate * 1000))/\((referenceURL as AnyObject).lastPathComponent!)"
+                guard let strongSelf = self else { return }
+                strongSelf.storageRef.child(filePath)
+                    .putFile(imageFile!, metadata: nil) { (metadata, error) in
+                        if let error = error {
+                            let nsError = error as NSError
+                            print("Error uploading: \(nsError.localizedDescription)")
+                            return
+                        }
+                        strongSelf.sendMessage(withData: [Constants.MessageFields.imageURL: strongSelf.storageRef.child((metadata?.path)!).description])
+                }
             })
         } else {
             guard let image = info[UIImagePickerControllerOriginalImage] as! UIImage? else { return }
             let imageData = UIImageJPEGRepresentation(image, 0.8)
-            guard let uid = FIRAuth.auth()?.currentUser?.uid else { return }
-            let imagePath = "\(uid)/\(Int(Date.timeIntervalSinceReferenceDate * 1000)).jpg"
+            let imagePath = "\(uid)/\(Int64(Date.timeIntervalSinceReferenceDate * 1000)).jpg"
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            self.storageRef.child(imagePath)
+                .put(imageData!, metadata: metadata) { [weak self] (metadata, error) in
+                    if let error = error {
+                        print("Error uploading: \(error)")
+                        return
+                    }
+                    guard let strongSelf = self else { return }
+                    strongSelf.sendMessage(withData: [Constants.MessageFields.imageURL: strongSelf.storageRef.child((metadata?.path)!).description])
+            }
         }
     }
     
