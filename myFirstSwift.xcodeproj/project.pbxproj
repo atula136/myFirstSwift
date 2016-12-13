@@ -17,6 +17,7 @@
 		247FB5291DE81F3300FCAFDB /* ViewSetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB5281DE81F3300FCAFDB /* ViewSetModel.swift */; };
 		247FB52B1DE83D2300FCAFDB /* BinaryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52A1DE83D2300FCAFDB /* BinaryKit.swift */; };
 		247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52C1DE83E5B00FCAFDB /* AppModel.swift */; };
+		24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */; };
 		24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950771DF7C93C00D18141 /* Chocolate.swift */; };
 		24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950791DF7CA1F00D18141 /* ShoppingCart.swift */; };
 		24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */; };
@@ -26,7 +27,6 @@
 		24F950881DF81F3F00D18141 /* CollectionParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950851DF81F3F00D18141 /* CollectionParallaxHeader.swift */; };
 		24F950891DF81F3F00D18141 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950861DF81F3F00D18141 /* CollectionViewCell.swift */; };
 		24F9508A1DF81F3F00D18141 /* CollectionViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950871DF81F3F00D18141 /* CollectionViewSectionHeader.swift */; };
-		24F950901DF82DE900D18141 /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9508F1DF82DE900D18141 /* StickyCollectionViewFlowLayout.swift */; };
 		24F950921DF90A7E00D18141 /* SlideShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950911DF90A7E00D18141 /* SlideShowCollectionViewCell.swift */; };
 		24F950951DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950941DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift */; };
 		24F950971DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950961DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift */; };
@@ -57,6 +57,7 @@
 		247FB5281DE81F3300FCAFDB /* ViewSetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSetModel.swift; sourceTree = "<group>"; };
 		247FB52A1DE83D2300FCAFDB /* BinaryKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryKit.swift; sourceTree = "<group>"; };
 		247FB52C1DE83E5B00FCAFDB /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		24C654811DE96BB900AF8E61 /* myFirstSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFirstSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		24F950771DF7C93C00D18141 /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		24F950791DF7CA1F00D18141 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		24F950861DF81F3F00D18141 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		24F950871DF81F3F00D18141 /* CollectionViewSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeader.swift; sourceTree = "<group>"; };
 		24F9508B1DF8267200D18141 /* CSStickyHeaderFlowLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSStickyHeaderFlowLayout.framework; path = "../../../../Library/Developer/Xcode/DerivedData/myFirstSwift-dcauixyzhesrijhfbchwlgpprvzm/Build/Products/Debug-iphonesimulator/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout.framework"; sourceTree = "<group>"; };
-		24F9508F1DF82DE900D18141 /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickyCollectionViewFlowLayout.swift; path = "../../StickyCollectionView-Swift/StickyCollectionView/Source/StickyCollectionViewFlowLayout.swift"; sourceTree = "<group>"; };
 		24F950911DF90A7E00D18141 /* SlideShowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideShowCollectionViewCell.swift; sourceTree = "<group>"; };
 		24F950941DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		24F950961DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		24F950931DF9589C00D18141 /* stickyCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				24F9508F1DF82DE900D18141 /* StickyCollectionViewFlowLayout.swift */,
+				24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */,
 				24F950861DF81F3F00D18141 /* CollectionViewCell.swift */,
 				24F950821DF816FF00D18141 /* StickyCollectionViewController.swift */,
 				24F950911DF90A7E00D18141 /* SlideShowCollectionViewCell.swift */,
@@ -383,6 +383,7 @@
 				24F9508A1DF81F3F00D18141 /* CollectionViewSectionHeader.swift in Sources */,
 				24F950971DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift in Sources */,
 				247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */,
+				24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */,
 				24F950C31DFEAB3700D18141 /* FireChatViewController.swift in Sources */,
 				240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */,
 				24F950921DF90A7E00D18141 /* SlideShowCollectionViewCell.swift in Sources */,
@@ -402,7 +403,6 @@
 				24F9509B1DF9738700D18141 /* CSStickyHeaderFlowLayoutAttributes.swift in Sources */,
 				24F950881DF81F3F00D18141 /* CollectionParallaxHeader.swift in Sources */,
 				24F950951DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift in Sources */,
-				24F950901DF82DE900D18141 /* StickyCollectionViewFlowLayout.swift in Sources */,
 				24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */,
 				247FB5131DE81C3E00FCAFDB /* AppDelegate.swift in Sources */,
 			);
