@@ -105,7 +105,7 @@ let message8 = JSQMessage(senderId: AvatarIDLeonard, displayName: getName(User.L
 let message9 = JSQMessage(senderId: AvatarIdWoz, displayName: getName(User.Wozniak), text: "You guys need an award for this, I'll talk to my people at Apple. 💯 💯 💯")
 
 // photo message
-let photoItem = JSQPhotoMediaItem(image: UIImage(named: "goldengate"))
+let photoItem = JSQPhotoMediaItem(image: UIImage(named: "success-baby"))
 let photoMessage = JSQMessage(senderId: AvatarIdWoz, displayName: getName(User.Wozniak), media: photoItem)
 
 //// audio mesage

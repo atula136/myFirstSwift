@@ -14,7 +14,7 @@ class FireChatLoginViewController: UIViewController {
     
     private let lbTitle: UILabel = {
         let label = UILabel()
-        let maxFontSize: CGFloat = 555
+        let maxFontSize: CGFloat = 777
         label.text = "FireChat"
         label.textAlignment = NSTextAlignment.center
         label.baselineAdjustment = .alignCenters
@@ -22,7 +22,9 @@ class FireChatLoginViewController: UIViewController {
 //        label.translatesAutoresizingMaskIntoConstraints = false
         label.minimumScaleFactor = 10 / maxFontSize
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: maxFontSize)
+//        label.font = UIFont.systemFont(ofSize: maxFontSize)
+//        label.font = UIFont(name: "zapfino", size: maxFontSize)
+        label.font = UIFont(name: "PartyLetPlain", size: maxFontSize)
         label.lineBreakMode = NSLineBreakMode.byTruncatingTail
         return label
     }()
@@ -197,7 +199,8 @@ class FireChatLoginViewController: UIViewController {
         let notificationName = Notification.Name(rawValue: Constants.NotificationKeys.SignedIn)
         NotificationCenter.default.post(name: notificationName, object: nil, userInfo: nil)
 //        performSegue(withIdentifier: Constants.Segues.SignInToFp, sender: nil)
-        navigationController?.pushViewController(FireChatViewController(), animated: true)
+//        navigationController?.pushViewController(FireChatViewController(), animated: true)
+        navigationController?.pushViewController(RealFireChatViewController(), animated: true)
     }
     
 }
@@ -214,6 +217,7 @@ struct Constants {
     }
     
     struct MessageFields {
+        static let userId = "userId"
         static let name = "name"
         static let text = "text"
         static let photoURL = "photoURL"

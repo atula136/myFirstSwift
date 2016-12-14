@@ -18,6 +18,7 @@
 		247FB52B1DE83D2300FCAFDB /* BinaryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52A1DE83D2300FCAFDB /* BinaryKit.swift */; };
 		247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52C1DE83E5B00FCAFDB /* AppModel.swift */; };
 		24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */; };
+		24ABAA051E0100FD00F004CB /* RealFireChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */; };
 		24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950771DF7C93C00D18141 /* Chocolate.swift */; };
 		24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950791DF7CA1F00D18141 /* ShoppingCart.swift */; };
 		24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */; };
@@ -58,6 +59,7 @@
 		247FB52A1DE83D2300FCAFDB /* BinaryKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryKit.swift; sourceTree = "<group>"; };
 		247FB52C1DE83E5B00FCAFDB /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealFireChatViewController.swift; sourceTree = "<group>"; };
 		24C654811DE96BB900AF8E61 /* myFirstSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFirstSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		24F950771DF7C93C00D18141 /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		24F950791DF7CA1F00D18141 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				24F950BE1DFE605A00D18141 /* GoogleService-Info.plist */,
 				24F950C01DFE629400D18141 /* FireChatLoginViewController.swift */,
 				24F950C21DFEAB3700D18141 /* FireChatViewController.swift */,
+				24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */,
 			);
 			name = fireChat;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24ABAA051E0100FD00F004CB /* RealFireChatViewController.swift in Sources */,
 				24F950A41DFA5C9500D18141 /* DemoConversation.swift in Sources */,
 				24F950A31DFA5C9500D18141 /* Conversation.swift in Sources */,
 				24F9507E1DF7CBFF00D18141 /* CurrencyFormatter.swift in Sources */,
