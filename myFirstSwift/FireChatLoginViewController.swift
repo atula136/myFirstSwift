@@ -14,12 +14,15 @@ class FireChatLoginViewController: UIViewController {
     
     private let lbTitle: UILabel = {
         let label = UILabel()
+        let maxFontSize: CGFloat = 555
         label.text = "FireChat"
-        label.textAlignment = .center
+        label.textAlignment = NSTextAlignment.center
+        label.baselineAdjustment = .alignCenters
         label.adjustsFontSizeToFitWidth = true
-        label.minimumScaleFactor = 0.1
+//        label.translatesAutoresizingMaskIntoConstraints = false
+        label.minimumScaleFactor = 10 / maxFontSize
         label.numberOfLines = 0
-//        label.font = UIFont.systemFont(ofSize: 118)
+        label.font = UIFont.systemFont(ofSize: maxFontSize)
         label.lineBreakMode = NSLineBreakMode.byTruncatingTail
         return label
     }()
