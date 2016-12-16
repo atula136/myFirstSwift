@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,37 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1219D3CBB86DC1FEFFC2D504DDD6D05A</key>
+		<key>17CC7DC3DF9509BC8931DC033479082F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>241826C7CDCC89EEA0DA3B3E0606F739</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>244C60C5B46F2E1FEFE86E344AF02974</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2739C8B54A4B91318DC72A62957D14CB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3769EFAC72BEEE09E899FE89C7F03691</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EDECFAAD3F4579364FF6C7DABC9ADEC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>46624093C6CB508637D9FC6571A734D0</key>
+		<key>3E7D88C2EFB263CD9B0A9915CDFD7C7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6FC54BED12880A290921768B637E3C02</key>
+		<key>6DDFA0A6A1927A5342DDE04D8C173F87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>759F0DA8122A7432B2CF1B348E26A6FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,12 +152,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CD27101887E32D63F0C31E5A968D1B7</key>
+		<key>91DD445A8EED92EC3F47B75B929D8167</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>99B73E7A6753A6AFD867A8C62BA65CF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB52D73D03F4BD5FE1CF4E5E256B650A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -193,6 +188,21 @@
 			<true/>
 		</dict>
 		<key>C858099BE8FA3C04D5C37E92F7C8B75F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEBE28356B10C2A5AF1A3D0CF55DC3B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E75E615D2F91B116132B431DD81442FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3F083443F28F0961E54E64E2D47B17D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

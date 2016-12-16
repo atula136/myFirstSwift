@@ -8,12 +8,12 @@ target 'myFirstSwift' do
   # Pods for myFirstSwift
   pod 'Alamofire'
   pod 'SwiftyJSON'
-#  pod 'Socket.IO-Client-Swift'
-#  pod 'SwiftSocket'
+  pod 'Socket.IO-Client-Swift'
+  pod 'SwiftSocket'
   pod 'TabPageViewController', :git => 'https://github.com/EndouMari/TabPageViewController', :branch => 'swift_3'
-#  pod 'XLPagerTabStrip'
-#  pod 'BATabBarController'
-#  pod 'RAMAnimatedTabBarController'
+  pod 'XLPagerTabStrip'
+  pod 'BATabBarController'
+  pod 'RAMAnimatedTabBarController'
 #  pod 'CSStickyHeaderFlowLayout', :git => 'https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout.git', :branch => 'swift'
   pod 'ImageSlideshow', '~> 1.0.0-beta.1'
   pod "ImageSlideshow/Alamofire"
@@ -21,6 +21,7 @@ target 'myFirstSwift' do
 
 #  pod 'JSQMessagesViewController'
   pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
+  pod 'JSQSystemSoundPlayer'
 
   #fireChat
   pod 'Firebase/Storage'

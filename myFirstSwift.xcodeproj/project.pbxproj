@@ -19,6 +19,13 @@
 		247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52C1DE83E5B00FCAFDB /* AppModel.swift */; };
 		24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */; };
 		24ABAA051E0100FD00F004CB /* RealFireChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */; };
+		24E914001E02B58700DD3DE4 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FB1E02B58700DD3DE4 /* Channel.swift */; };
+		24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */; };
+		24E914021E02B58700DD3DE4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FD1E02B58700DD3DE4 /* ChatViewController.swift */; };
+		24E914031E02B58700DD3DE4 /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FE1E02B58700DD3DE4 /* CreateChannelCell.swift */; };
+		24E914041E02B58700DD3DE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FF1E02B58700DD3DE4 /* LoginViewController.swift */; };
+		24E914061E02B66E00DD3DE4 /* RealTimeChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E914051E02B66E00DD3DE4 /* RealTimeChat.storyboard */; };
+		24E914081E03925000DD3DE4 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914071E03925000DD3DE4 /* UIImage+Gif.swift */; };
 		24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950771DF7C93C00D18141 /* Chocolate.swift */; };
 		24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950791DF7CA1F00D18141 /* ShoppingCart.swift */; };
 		24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */; };
@@ -33,7 +40,7 @@
 		24F950971DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950961DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift */; };
 		24F9509A1DF9738700D18141 /* CSStickyHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950981DF9738700D18141 /* CSStickyHeaderFlowLayout.swift */; };
 		24F9509B1DF9738700D18141 /* CSStickyHeaderFlowLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950991DF9738700D18141 /* CSStickyHeaderFlowLayoutAttributes.swift */; };
-		24F950A21DFA5C9500D18141 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9509D1DFA5C9500D18141 /* ChatViewController.swift */; };
+		24F950A21DFA5C9500D18141 /* JSQChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9509D1DFA5C9500D18141 /* JSQChatViewController.swift */; };
 		24F950A31DFA5C9500D18141 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9509E1DFA5C9500D18141 /* Conversation.swift */; };
 		24F950A41DFA5C9500D18141 /* DemoConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9509F1DFA5C9500D18141 /* DemoConversation.swift */; };
 		24F950A51DFA5C9500D18141 /* ChatInitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950A01DFA5C9500D18141 /* ChatInitalTableViewController.swift */; };
@@ -61,6 +68,13 @@
 		24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealFireChatViewController.swift; sourceTree = "<group>"; };
 		24C654811DE96BB900AF8E61 /* myFirstSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFirstSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		24E913FB1E02B58700DD3DE4 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
+		24E913FD1E02B58700DD3DE4 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		24E913FE1E02B58700DD3DE4 /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
+		24E913FF1E02B58700DD3DE4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		24E914051E02B66E00DD3DE4 /* RealTimeChat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealTimeChat.storyboard; sourceTree = "<group>"; };
+		24E914071E03925000DD3DE4 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		24F950771DF7C93C00D18141 /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		24F950791DF7CA1F00D18141 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCell.swift; sourceTree = "<group>"; };
@@ -76,7 +90,7 @@
 		24F950961DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
 		24F950981DF9738700D18141 /* CSStickyHeaderFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyHeaderFlowLayout.swift; sourceTree = "<group>"; };
 		24F950991DF9738700D18141 /* CSStickyHeaderFlowLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStickyHeaderFlowLayoutAttributes.swift; sourceTree = "<group>"; };
-		24F9509D1DFA5C9500D18141 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		24F9509D1DFA5C9500D18141 /* JSQChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSQChatViewController.swift; sourceTree = "<group>"; };
 		24F9509E1DFA5C9500D18141 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		24F9509F1DFA5C9500D18141 /* DemoConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoConversation.swift; sourceTree = "<group>"; };
 		24F950A01DFA5C9500D18141 /* ChatInitalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInitalTableViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +144,7 @@
 		247FB5111DE81C3E00FCAFDB /* myFirstSwift */ = {
 			isa = PBXGroup;
 			children = (
+				24E913FA1E02B56400DD3DE4 /* realTimeChat */,
 				240684CD1DFFB2D50036BA17 /* main */,
 				24F950BD1DFE604700D18141 /* fireChat */,
 				24F950A71DFA623C00D18141 /* rxSwift */,
@@ -170,6 +185,20 @@
 			name = objectiveC;
 			sourceTree = "<group>";
 		};
+		24E913FA1E02B56400DD3DE4 /* realTimeChat */ = {
+			isa = PBXGroup;
+			children = (
+				24E914051E02B66E00DD3DE4 /* RealTimeChat.storyboard */,
+				24E914071E03925000DD3DE4 /* UIImage+Gif.swift */,
+				24E913FB1E02B58700DD3DE4 /* Channel.swift */,
+				24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */,
+				24E913FD1E02B58700DD3DE4 /* ChatViewController.swift */,
+				24E913FE1E02B58700DD3DE4 /* CreateChannelCell.swift */,
+				24E913FF1E02B58700DD3DE4 /* LoginViewController.swift */,
+			);
+			name = realTimeChat;
+			sourceTree = "<group>";
+		};
 		24F9507F1DF7EFBE00D18141 /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				24F950AA1DFA646C00D18141 /* jsq_messages_sample.m4a */,
-				24F9509D1DFA5C9500D18141 /* ChatViewController.swift */,
+				24F9509D1DFA5C9500D18141 /* JSQChatViewController.swift */,
 				24F9509E1DFA5C9500D18141 /* Conversation.swift */,
 				24F9509F1DFA5C9500D18141 /* DemoConversation.swift */,
 				24F950A01DFA5C9500D18141 /* ChatInitalTableViewController.swift */,
@@ -321,6 +350,7 @@
 				24F950BF1DFE605A00D18141 /* GoogleService-Info.plist in Resources */,
 				247FB51D1DE81C3E00FCAFDB /* Assets.xcassets in Resources */,
 				247FB5181DE81C3E00FCAFDB /* Main.storyboard in Resources */,
+				24E914061E02B66E00DD3DE4 /* RealTimeChat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24ABAA051E0100FD00F004CB /* RealFireChatViewController.swift in Sources */,
+				24E914031E02B58700DD3DE4 /* CreateChannelCell.swift in Sources */,
 				24F950A41DFA5C9500D18141 /* DemoConversation.swift in Sources */,
 				24F950A31DFA5C9500D18141 /* Conversation.swift in Sources */,
 				24F9507E1DF7CBFF00D18141 /* CurrencyFormatter.swift in Sources */,
@@ -392,7 +423,9 @@
 				240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */,
 				24F950921DF90A7E00D18141 /* SlideShowCollectionViewCell.swift in Sources */,
 				247FB52B1DE83D2300FCAFDB /* BinaryKit.swift in Sources */,
+				24E914021E02B58700DD3DE4 /* ChatViewController.swift in Sources */,
 				24F9509A1DF9738700D18141 /* CSStickyHeaderFlowLayout.swift in Sources */,
+				24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */,
 				24F950891DF81F3F00D18141 /* CollectionViewCell.swift in Sources */,
 				24F950811DF7EFF100D18141 /* BaseViewController.swift in Sources */,
 				24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */,
@@ -401,9 +434,12 @@
 				24F950C11DFE629400D18141 /* FireChatLoginViewController.swift in Sources */,
 				247FB51B1DE81C3E00FCAFDB /* myFirstSwift.xcdatamodeld in Sources */,
 				24F950A61DFA5C9500D18141 /* SettingsTableViewController.swift in Sources */,
+				24E914001E02B58700DD3DE4 /* Channel.swift in Sources */,
 				24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */,
 				24F950831DF816FF00D18141 /* StickyCollectionViewController.swift in Sources */,
-				24F950A21DFA5C9500D18141 /* ChatViewController.swift in Sources */,
+				24E914041E02B58700DD3DE4 /* LoginViewController.swift in Sources */,
+				24F950A21DFA5C9500D18141 /* JSQChatViewController.swift in Sources */,
+				24E914081E03925000DD3DE4 /* UIImage+Gif.swift in Sources */,
 				24F9509B1DF9738700D18141 /* CSStickyHeaderFlowLayoutAttributes.swift in Sources */,
 				24F950881DF81F3F00D18141 /* CollectionParallaxHeader.swift in Sources */,
 				24F950951DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift in Sources */,

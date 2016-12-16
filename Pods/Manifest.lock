@@ -84,12 +84,13 @@ PODS:
     - ImageSlideshow/Core
     - Kingfisher (~> 3.0)
   - JSQMessagesViewController (7.3.4)
+  - JSQSystemSoundPlayer (4.4.0)
   - Kingfisher (3.2.2)
   - Masonry (1.0.2)
   - RAMAnimatedTabBarController (2.1.1)
   - SnapKit (3.0.2)
   - Socket.IO-Client-Swift (8.1.2)
-  - SwiftSocket (1.2)
+  - SwiftSocket (2.0)
   - SwiftyJSON (3.1.1)
   - TabPageViewController (0.2.1)
   - XLPagerTabStrip (6.0.0)
@@ -107,6 +108,7 @@ DEPENDENCIES:
   - ImageSlideshow/Alamofire
   - ImageSlideshow/Kingfisher
   - JSQMessagesViewController (from `https://github.com/jessesquires/JSQMessagesViewController.git`, branch `develop`)
+  - JSQSystemSoundPlayer
   - RAMAnimatedTabBarController
   - SnapKit
   - Socket.IO-Client-Swift
@@ -151,16 +153,17 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
   ImageSlideshow: adf31cd12d65c1e78c15d024b9227d56fc46208c
   JSQMessagesViewController: c11b9e77372ab72c45c67311f6da7342e32df1e8
+  JSQSystemSoundPlayer: 126ccc4a08db8fc3036bd07d33b0f8eda1559476
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   RAMAnimatedTabBarController: 128e0d71dc802766de575a3c59c6fdcc8e2f921b
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   Socket.IO-Client-Swift: 542d82e6708f9901b3f6c1d134fb60fa0d09d4d1
-  SwiftSocket: 5052a3b10dbb9224cfb0875eb95940143252d458
+  SwiftSocket: 279de0cc1629ccbf37a475f5d96be30024394d8d
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
   TabPageViewController: a4b46480e21251000962abad071b538679dbc2ad
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: d7e8e093e2b9daec8557d618893c4fc755096998
+PODFILE CHECKSUM: 65639a985b4c89c063455b1bbb830a47460cdd09
 
 COCOAPODS: 1.2.0.beta.1

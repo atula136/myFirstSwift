@@ -101,12 +101,12 @@ class ChatInitalTableViewController: UITableViewController {
         case 0:
             switch indexPath.row {
             case 0:
-                let chatView = ChatViewController()
+                let chatView = JSQChatViewController()
                 chatView.messages = makeNormalConversation()
                 let chatNavigationController = UINavigationController(rootViewController: chatView)
                 present(chatNavigationController, animated: true, completion: nil)
             case 1:
-                let chatView = ChatViewController()
+                let chatView = JSQChatViewController()
                 chatView.messages = makeGroupConversation()
                 let chatNavigationController = UINavigationController(rootViewController: chatView)
                 present(chatNavigationController, animated: true, completion: nil)

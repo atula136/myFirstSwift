@@ -16,12 +16,13 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
                  StickyCollectionViewController(),
                  StickyHeaderCollectionViewController(collectionViewLayout: CSStickyHeaderFlowLayout()),
                  ChatInitalTableViewController(),
-                 FireChatLoginViewController()
-                 ]
-
+                 FireChatLoginViewController(),
+                 LoginViewController()
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         tableView.frame = self.view.frame
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
@@ -33,14 +34,25 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row) -- \((String(describing: (items[indexPath.row])).components(separatedBy: ".").last?.components(separatedBy: ":").first)!)"
+        if indexPath.row == 5 {
+            cell.textLabel?.text = "\(indexPath.row) -- Real Time Chat"
+        }
+        else {
+            cell.textLabel?.text = "\(indexPath.row) -- \((String(describing: (items[indexPath.row])).components(separatedBy: ".").last?.components(separatedBy: ":").first)!)"
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(items[indexPath.row], animated: true)
+        if indexPath.row == 5 {
+            let rtcViewController = UIStoryboard(name: "RealTimeChat", bundle: Bundle.main).instantiateViewController(withIdentifier: "RTCStoryboard")
+            navigationController?.pushViewController(rtcViewController, animated: true)
+        }
+        else {
+            navigationController?.pushViewController(items[indexPath.row], animated: true)
+        }
     }
 }
