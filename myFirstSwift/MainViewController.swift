@@ -17,11 +17,17 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
                  StickyHeaderCollectionViewController(collectionViewLayout: CSStickyHeaderFlowLayout()),
                  ChatInitalTableViewController(),
                  FireChatLoginViewController(),
-                 LoginViewController()
+                 LoginViewController(),
+                 NaihoChatMessengerViewController(),
+                 CustomTabBarMainViewController()
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.backgroundColor = UIColor.green
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.barTintColor = UIColor.blue
         
         // Do any additional setup after loading the view.
         tableView.frame = self.view.frame
@@ -51,7 +57,13 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
             let rtcViewController = UIStoryboard(name: "RealTimeChat", bundle: Bundle.main).instantiateViewController(withIdentifier: "RTCStoryboard")
             navigationController?.pushViewController(rtcViewController, animated: true)
         }
+        else if indexPath.row == 7 {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//            appDelegate.window?.rootViewController = UINavigationController(rootViewController: items[indexPath.row])
+            appDelegate.window?.rootViewController = items[indexPath.row]
+        }
         else {
+            items[indexPath.row].title = "\((String(describing: (items[indexPath.row])).components(separatedBy: ".").last?.components(separatedBy: ":").first)!)"
             navigationController?.pushViewController(items[indexPath.row], animated: true)
         }
     }

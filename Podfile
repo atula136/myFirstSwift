@@ -32,4 +32,8 @@ target 'myFirstSwift' do
   pod 'Firebase/RemoteConfig'
 
   pod 'SnapKit'
+
+
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end

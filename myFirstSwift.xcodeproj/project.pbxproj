@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240684CE1DFFB31A0036BA17 /* MainViewController.swift */; };
+		243DFD4C1E092ACD00C08D71 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD4B1E092ACD00C08D71 /* CartViewController.swift */; };
+		243DFD4F1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */; };
+		243DFD511E0B7E5800C08D71 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */; };
+		243DFD531E0B886100C08D71 /* VC1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD521E0B886100C08D71 /* VC1ViewController.swift */; };
 		247FB5131DE81C3E00FCAFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB5121DE81C3E00FCAFDB /* AppDelegate.swift */; };
 		247FB5151DE81C3E00FCAFDB /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB5141DE81C3E00FCAFDB /* RxSwiftViewController.swift */; };
 		247FB5181DE81C3E00FCAFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247FB5161DE81C3E00FCAFDB /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 		247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52C1DE83E5B00FCAFDB /* AppModel.swift */; };
 		24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */; };
 		24ABAA051E0100FD00F004CB /* RealFireChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */; };
+		24B630CD1E0B94DB004F7270 /* VC2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630CC1E0B94DB004F7270 /* VC2ViewController.swift */; };
+		24B630CF1E0B980E004F7270 /* VC1NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630CE1E0B980E004F7270 /* VC1NextViewController.swift */; };
+		24B630D11E0BDCBD004F7270 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D01E0BDCBD004F7270 /* CustomTabBarItem.swift */; };
+		24B630D31E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D21E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift */; };
 		24E914001E02B58700DD3DE4 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FB1E02B58700DD3DE4 /* Channel.swift */; };
 		24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */; };
 		24E914021E02B58700DD3DE4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FD1E02B58700DD3DE4 /* ChatViewController.swift */; };
@@ -26,6 +34,12 @@
 		24E914041E02B58700DD3DE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FF1E02B58700DD3DE4 /* LoginViewController.swift */; };
 		24E914061E02B66E00DD3DE4 /* RealTimeChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E914051E02B66E00DD3DE4 /* RealTimeChat.storyboard */; };
 		24E914081E03925000DD3DE4 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914071E03925000DD3DE4 /* UIImage+Gif.swift */; };
+		24E9140B1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9140A1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift */; };
+		24E9140D1E03CD1F00DD3DE4 /* NaihoChatMessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9140C1E03CD1F00DD3DE4 /* NaihoChatMessengerTableViewCell.swift */; };
+		24E9140F1E03D3DB00DD3DE4 /* NaihoChatMessengerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9140E1E03D3DB00DD3DE4 /* NaihoChatMessengerModel.swift */; };
+		24E914111E03D53400DD3DE4 /* NaihoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914101E03D53400DD3DE4 /* NaihoMessageModel.swift */; };
+		24E914141E03D60700DD3DE4 /* NaihoUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914131E03D60700DD3DE4 /* NaihoUserModel.swift */; };
+		24E914161E077C8000DD3DE4 /* NaihoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914151E077C8000DD3DE4 /* NaihoConstants.swift */; };
 		24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950771DF7C93C00D18141 /* Chocolate.swift */; };
 		24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950791DF7CA1F00D18141 /* ShoppingCart.swift */; };
 		24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */; };
@@ -54,6 +68,10 @@
 /* Begin PBXFileReference section */
 		0E8D20784C68E029C44FFDEF /* Pods-myFirstSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		240684CE1DFFB31A0036BA17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		243DFD4B1E092ACD00C08D71 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarMainViewController.swift; sourceTree = "<group>"; };
+		243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		243DFD521E0B886100C08D71 /* VC1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1ViewController.swift; sourceTree = "<group>"; };
 		247FB50F1DE81C3E00FCAFDB /* myFirstSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247FB5121DE81C3E00FCAFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		247FB5141DE81C3E00FCAFDB /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +85,10 @@
 		247FB52C1DE83E5B00FCAFDB /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealFireChatViewController.swift; sourceTree = "<group>"; };
+		24B630CC1E0B94DB004F7270 /* VC2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2ViewController.swift; sourceTree = "<group>"; };
+		24B630CE1E0B980E004F7270 /* VC1NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1NextViewController.swift; sourceTree = "<group>"; };
+		24B630D01E0BDCBD004F7270 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		24B630D21E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		24C654811DE96BB900AF8E61 /* myFirstSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFirstSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		24E913FB1E02B58700DD3DE4 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +97,12 @@
 		24E913FF1E02B58700DD3DE4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		24E914051E02B66E00DD3DE4 /* RealTimeChat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealTimeChat.storyboard; sourceTree = "<group>"; };
 		24E914071E03925000DD3DE4 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		24E9140A1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoChatMessengerViewController.swift; sourceTree = "<group>"; };
+		24E9140C1E03CD1F00DD3DE4 /* NaihoChatMessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoChatMessengerTableViewCell.swift; sourceTree = "<group>"; };
+		24E9140E1E03D3DB00DD3DE4 /* NaihoChatMessengerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoChatMessengerModel.swift; sourceTree = "<group>"; };
+		24E914101E03D53400DD3DE4 /* NaihoMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoMessageModel.swift; sourceTree = "<group>"; };
+		24E914131E03D60700DD3DE4 /* NaihoUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoUserModel.swift; sourceTree = "<group>"; };
+		24E914151E077C8000DD3DE4 /* NaihoConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoConstants.swift; sourceTree = "<group>"; };
 		24F950771DF7C93C00D18141 /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		24F950791DF7CA1F00D18141 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCell.swift; sourceTree = "<group>"; };
@@ -123,6 +151,20 @@
 			name = main;
 			sourceTree = "<group>";
 		};
+		243DFD4D1E0B7A5A00C08D71 /* customTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */,
+				243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */,
+				24B630D01E0BDCBD004F7270 /* CustomTabBarItem.swift */,
+				243DFD521E0B886100C08D71 /* VC1ViewController.swift */,
+				24B630CC1E0B94DB004F7270 /* VC2ViewController.swift */,
+				24B630CE1E0B980E004F7270 /* VC1NextViewController.swift */,
+				24B630D21E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift */,
+			);
+			name = customTabBar;
+			sourceTree = "<group>";
+		};
 		247FB5061DE81C3E00FCAFDB = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +186,8 @@
 		247FB5111DE81C3E00FCAFDB /* myFirstSwift */ = {
 			isa = PBXGroup;
 			children = (
+				243DFD4D1E0B7A5A00C08D71 /* customTabBar */,
+				24E914091E03CA3900DD3DE4 /* naihoFireChat */,
 				24E913FA1E02B56400DD3DE4 /* realTimeChat */,
 				240684CD1DFFB2D50036BA17 /* main */,
 				24F950BD1DFE604700D18141 /* fireChat */,
@@ -199,6 +243,19 @@
 			name = realTimeChat;
 			sourceTree = "<group>";
 		};
+		24E914091E03CA3900DD3DE4 /* naihoFireChat */ = {
+			isa = PBXGroup;
+			children = (
+				24E9140A1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift */,
+				24E9140C1E03CD1F00DD3DE4 /* NaihoChatMessengerTableViewCell.swift */,
+				24E9140E1E03D3DB00DD3DE4 /* NaihoChatMessengerModel.swift */,
+				24E914101E03D53400DD3DE4 /* NaihoMessageModel.swift */,
+				24E914131E03D60700DD3DE4 /* NaihoUserModel.swift */,
+				24E914151E077C8000DD3DE4 /* NaihoConstants.swift */,
+			);
+			name = naihoFireChat;
+			sourceTree = "<group>";
+		};
 		24F9507F1DF7EFBE00D18141 /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +306,7 @@
 			children = (
 				247FB5141DE81C3E00FCAFDB /* RxSwiftViewController.swift */,
 				24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */,
+				243DFD4B1E092ACD00C08D71 /* CartViewController.swift */,
 			);
 			name = rxSwift;
 			sourceTree = "<group>";
@@ -414,19 +472,26 @@
 				24F950A41DFA5C9500D18141 /* DemoConversation.swift in Sources */,
 				24F950A31DFA5C9500D18141 /* Conversation.swift in Sources */,
 				24F9507E1DF7CBFF00D18141 /* CurrencyFormatter.swift in Sources */,
+				24E9140D1E03CD1F00DD3DE4 /* NaihoChatMessengerTableViewCell.swift in Sources */,
 				247FB5151DE81C3E00FCAFDB /* RxSwiftViewController.swift in Sources */,
 				24F9508A1DF81F3F00D18141 /* CollectionViewSectionHeader.swift in Sources */,
 				24F950971DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift in Sources */,
 				247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */,
 				24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */,
+				243DFD531E0B886100C08D71 /* VC1ViewController.swift in Sources */,
 				24F950C31DFEAB3700D18141 /* FireChatViewController.swift in Sources */,
 				240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */,
+				24B630CF1E0B980E004F7270 /* VC1NextViewController.swift in Sources */,
 				24F950921DF90A7E00D18141 /* SlideShowCollectionViewCell.swift in Sources */,
 				247FB52B1DE83D2300FCAFDB /* BinaryKit.swift in Sources */,
+				243DFD4C1E092ACD00C08D71 /* CartViewController.swift in Sources */,
+				24B630CD1E0B94DB004F7270 /* VC2ViewController.swift in Sources */,
 				24E914021E02B58700DD3DE4 /* ChatViewController.swift in Sources */,
 				24F9509A1DF9738700D18141 /* CSStickyHeaderFlowLayout.swift in Sources */,
+				24B630D31E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift in Sources */,
 				24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */,
 				24F950891DF81F3F00D18141 /* CollectionViewCell.swift in Sources */,
+				24E9140B1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift in Sources */,
 				24F950811DF7EFF100D18141 /* BaseViewController.swift in Sources */,
 				24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */,
 				24F950A51DFA5C9500D18141 /* ChatInitalTableViewController.swift in Sources */,
@@ -435,6 +500,9 @@
 				247FB51B1DE81C3E00FCAFDB /* myFirstSwift.xcdatamodeld in Sources */,
 				24F950A61DFA5C9500D18141 /* SettingsTableViewController.swift in Sources */,
 				24E914001E02B58700DD3DE4 /* Channel.swift in Sources */,
+				24E9140F1E03D3DB00DD3DE4 /* NaihoChatMessengerModel.swift in Sources */,
+				24E914141E03D60700DD3DE4 /* NaihoUserModel.swift in Sources */,
+				243DFD511E0B7E5800C08D71 /* CustomTabBar.swift in Sources */,
 				24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */,
 				24F950831DF816FF00D18141 /* StickyCollectionViewController.swift in Sources */,
 				24E914041E02B58700DD3DE4 /* LoginViewController.swift in Sources */,
@@ -442,9 +510,13 @@
 				24E914081E03925000DD3DE4 /* UIImage+Gif.swift in Sources */,
 				24F9509B1DF9738700D18141 /* CSStickyHeaderFlowLayoutAttributes.swift in Sources */,
 				24F950881DF81F3F00D18141 /* CollectionParallaxHeader.swift in Sources */,
+				243DFD4F1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift in Sources */,
+				24E914161E077C8000DD3DE4 /* NaihoConstants.swift in Sources */,
+				24B630D11E0BDCBD004F7270 /* CustomTabBarItem.swift in Sources */,
 				24F950951DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift in Sources */,
 				24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */,
 				247FB5131DE81C3E00FCAFDB /* AppDelegate.swift in Sources */,
+				24E914111E03D53400DD3DE4 /* NaihoMessageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

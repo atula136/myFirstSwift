@@ -69,7 +69,7 @@ class StickyHeaderCollectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         let cartButton: UIBarButtonItem = UIBarButtonItem()
         navigationItem.rightBarButtonItem = cartButton
-        cartButton.title = "\(ShoppingCart.sharedCart.chocolates.count) 🍫"
+        cartButton.title = "🍫"
         cartButton.target = self
         cartButton.action = #selector(gotoNextViewController)
     }

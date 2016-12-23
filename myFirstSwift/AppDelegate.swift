@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let mainViewController = ChatLoginViewController()
         let mainViewController = MainViewController()
         let navigationController = UINavigationController(rootViewController: mainViewController)
+        navigationController.navigationBar.backgroundColor = UIColor(red:1.00, green:0.71, blue:0.73, alpha:1.0)
+        navigationController.navigationBar.isTranslucent = false
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
