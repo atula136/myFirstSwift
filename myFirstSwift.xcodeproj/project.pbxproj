@@ -27,6 +27,10 @@
 		24B630CF1E0B980E004F7270 /* VC1NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630CE1E0B980E004F7270 /* VC1NextViewController.swift */; };
 		24B630D11E0BDCBD004F7270 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D01E0BDCBD004F7270 /* CustomTabBarItem.swift */; };
 		24B630D31E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D21E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift */; };
+		24B630D61E0D234E004F7270 /* CustomScrollContainerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D51E0D234E004F7270 /* CustomScrollContainerMainViewController.swift */; };
+		24B630D81E0D244A004F7270 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D71E0D244A004F7270 /* AViewController.swift */; };
+		24B630DA1E0D2473004F7270 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630D91E0D2473004F7270 /* BViewController.swift */; };
+		24B630DC1E0D248F004F7270 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630DB1E0D248F004F7270 /* CViewController.swift */; };
 		24E914001E02B58700DD3DE4 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FB1E02B58700DD3DE4 /* Channel.swift */; };
 		24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */; };
 		24E914021E02B58700DD3DE4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E913FD1E02B58700DD3DE4 /* ChatViewController.swift */; };
@@ -89,6 +93,10 @@
 		24B630CE1E0B980E004F7270 /* VC1NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1NextViewController.swift; sourceTree = "<group>"; };
 		24B630D01E0BDCBD004F7270 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
 		24B630D21E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		24B630D51E0D234E004F7270 /* CustomScrollContainerMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollContainerMainViewController.swift; sourceTree = "<group>"; };
+		24B630D71E0D244A004F7270 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		24B630D91E0D2473004F7270 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		24B630DB1E0D248F004F7270 /* CViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
 		24C654811DE96BB900AF8E61 /* myFirstSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myFirstSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		24E913FB1E02B58700DD3DE4 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		24E913FC1E02B58700DD3DE4 /* ChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +194,7 @@
 		247FB5111DE81C3E00FCAFDB /* myFirstSwift */ = {
 			isa = PBXGroup;
 			children = (
+				24B630D41E0D231B004F7270 /* CustomScrollContainer */,
 				243DFD4D1E0B7A5A00C08D71 /* customTabBar */,
 				24E914091E03CA3900DD3DE4 /* naihoFireChat */,
 				24E913FA1E02B56400DD3DE4 /* realTimeChat */,
@@ -219,6 +228,17 @@
 				247FB52C1DE83E5B00FCAFDB /* AppModel.swift */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		24B630D41E0D231B004F7270 /* CustomScrollContainer */ = {
+			isa = PBXGroup;
+			children = (
+				24B630D51E0D234E004F7270 /* CustomScrollContainerMainViewController.swift */,
+				24B630D71E0D244A004F7270 /* AViewController.swift */,
+				24B630D91E0D2473004F7270 /* BViewController.swift */,
+				24B630DB1E0D248F004F7270 /* CViewController.swift */,
+			);
+			name = CustomScrollContainer;
 			sourceTree = "<group>";
 		};
 		24C654821DE96C6B00AF8E61 /* objectiveC */ = {
@@ -478,7 +498,10 @@
 				24F950971DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift in Sources */,
 				247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */,
 				24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */,
+				24B630D61E0D234E004F7270 /* CustomScrollContainerMainViewController.swift in Sources */,
+				24B630D81E0D244A004F7270 /* AViewController.swift in Sources */,
 				243DFD531E0B886100C08D71 /* VC1ViewController.swift in Sources */,
+				24B630DA1E0D2473004F7270 /* BViewController.swift in Sources */,
 				24F950C31DFEAB3700D18141 /* FireChatViewController.swift in Sources */,
 				240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */,
 				24B630CF1E0B980E004F7270 /* VC1NextViewController.swift in Sources */,
@@ -492,6 +515,7 @@
 				24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */,
 				24F950891DF81F3F00D18141 /* CollectionViewCell.swift in Sources */,
 				24E9140B1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift in Sources */,
+				24B630DC1E0D248F004F7270 /* CViewController.swift in Sources */,
 				24F950811DF7EFF100D18141 /* BaseViewController.swift in Sources */,
 				24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */,
 				24F950A51DFA5C9500D18141 /* ChatInitalTableViewController.swift in Sources */,

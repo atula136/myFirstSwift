@@ -19,7 +19,8 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
                  FireChatLoginViewController(),
                  LoginViewController(),
                  NaihoChatMessengerViewController(),
-                 CustomTabBarMainViewController()
+                 CustomTabBarMainViewController(),
+                 CustomScrollContainerMainViewController()
     ]
     
     override func viewDidLoad() {
@@ -60,6 +61,10 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         else if indexPath.row == 7 {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //            appDelegate.window?.rootViewController = UINavigationController(rootViewController: items[indexPath.row])
+            appDelegate.window?.rootViewController = items[indexPath.row]
+        }
+        else if indexPath.row == 8 {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.window?.rootViewController = items[indexPath.row]
         }
         else {
