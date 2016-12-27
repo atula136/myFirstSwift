@@ -12,6 +12,19 @@
 		243DFD4F1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */; };
 		243DFD511E0B7E5800C08D71 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */; };
 		243DFD531E0B886100C08D71 /* VC1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD521E0B886100C08D71 /* VC1ViewController.swift */; };
+		244A7E141E10FCF20038AC4C /* EmbedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E131E10FCF20038AC4C /* EmbedContainerViewController.swift */; };
+		244A7E161E1108A00038AC4C /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E151E1108A00038AC4C /* ExampleViewController.swift */; };
+		244A7E181E1108C30038AC4C /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E171E1108C30038AC4C /* ContentViewController.swift */; };
+		244A7E1A1E1109680038AC4C /* Segmentio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244A7E191E1109680038AC4C /* Segmentio.storyboard */; };
+		244A7E1C1E1109B80038AC4C /* Hints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E1B1E1109B80038AC4C /* Hints.swift */; };
+		244A7E1E1E110A170038AC4C /* SegmentioHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E1D1E110A170038AC4C /* SegmentioHomeViewController.swift */; };
+		244A7E201E110A6B0038AC4C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E1F1E110A6B0038AC4C /* SideMenuViewController.swift */; };
+		244A7E221E1121E10038AC4C /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E211E1121E10038AC4C /* String+Convenience.swift */; };
+		244A7E241E119CF90038AC4C /* SegmentioBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E231E119CF90038AC4C /* SegmentioBuilder.swift */; };
+		244A7E261E119D2F0038AC4C /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E251E119D2F0038AC4C /* UIColor+RGB.swift */; };
+		244A7E281E119DA00038AC4C /* UIFont+ExampleFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E271E119DA00038AC4C /* UIFont+ExampleFonts.swift */; };
+		244A7E2A1E120C6F0038AC4C /* UINavigationBar+Flat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E291E120C6F0038AC4C /* UINavigationBar+Flat.swift */; };
+		244A7E2C1E120C8D0038AC4C /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244A7E2B1E120C8D0038AC4C /* AppearanceConfigurator.swift */; };
 		247FB5131DE81C3E00FCAFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB5121DE81C3E00FCAFDB /* AppDelegate.swift */; };
 		247FB5151DE81C3E00FCAFDB /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB5141DE81C3E00FCAFDB /* RxSwiftViewController.swift */; };
 		247FB5181DE81C3E00FCAFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247FB5161DE81C3E00FCAFDB /* Main.storyboard */; };
@@ -76,6 +89,19 @@
 		243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarMainViewController.swift; sourceTree = "<group>"; };
 		243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		243DFD521E0B886100C08D71 /* VC1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1ViewController.swift; sourceTree = "<group>"; };
+		244A7E131E10FCF20038AC4C /* EmbedContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedContainerViewController.swift; sourceTree = "<group>"; };
+		244A7E151E1108A00038AC4C /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		244A7E171E1108C30038AC4C /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		244A7E191E1109680038AC4C /* Segmentio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Segmentio.storyboard; sourceTree = "<group>"; };
+		244A7E1B1E1109B80038AC4C /* Hints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hints.swift; sourceTree = "<group>"; };
+		244A7E1D1E110A170038AC4C /* SegmentioHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentioHomeViewController.swift; sourceTree = "<group>"; };
+		244A7E1F1E110A6B0038AC4C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		244A7E211E1121E10038AC4C /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
+		244A7E231E119CF90038AC4C /* SegmentioBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentioBuilder.swift; sourceTree = "<group>"; };
+		244A7E251E119D2F0038AC4C /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		244A7E271E119DA00038AC4C /* UIFont+ExampleFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+ExampleFonts.swift"; sourceTree = "<group>"; };
+		244A7E291E120C6F0038AC4C /* UINavigationBar+Flat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Flat.swift"; sourceTree = "<group>"; };
+		244A7E2B1E120C8D0038AC4C /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
 		247FB50F1DE81C3E00FCAFDB /* myFirstSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247FB5121DE81C3E00FCAFDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		247FB5141DE81C3E00FCAFDB /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +199,26 @@
 			name = customTabBar;
 			sourceTree = "<group>";
 		};
+		244A7E121E10F7BF0038AC4C /* segmentioUsage */ = {
+			isa = PBXGroup;
+			children = (
+				244A7E131E10FCF20038AC4C /* EmbedContainerViewController.swift */,
+				244A7E151E1108A00038AC4C /* ExampleViewController.swift */,
+				244A7E171E1108C30038AC4C /* ContentViewController.swift */,
+				244A7E191E1109680038AC4C /* Segmentio.storyboard */,
+				244A7E1B1E1109B80038AC4C /* Hints.swift */,
+				244A7E1D1E110A170038AC4C /* SegmentioHomeViewController.swift */,
+				244A7E1F1E110A6B0038AC4C /* SideMenuViewController.swift */,
+				244A7E211E1121E10038AC4C /* String+Convenience.swift */,
+				244A7E231E119CF90038AC4C /* SegmentioBuilder.swift */,
+				244A7E251E119D2F0038AC4C /* UIColor+RGB.swift */,
+				244A7E271E119DA00038AC4C /* UIFont+ExampleFonts.swift */,
+				244A7E291E120C6F0038AC4C /* UINavigationBar+Flat.swift */,
+				244A7E2B1E120C8D0038AC4C /* AppearanceConfigurator.swift */,
+			);
+			name = segmentioUsage;
+			sourceTree = "<group>";
+		};
 		247FB5061DE81C3E00FCAFDB = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +240,8 @@
 		247FB5111DE81C3E00FCAFDB /* myFirstSwift */ = {
 			isa = PBXGroup;
 			children = (
-				24B630D41E0D231B004F7270 /* CustomScrollContainer */,
+				244A7E121E10F7BF0038AC4C /* segmentioUsage */,
+				24B630D41E0D231B004F7270 /* customScrollContainer */,
 				243DFD4D1E0B7A5A00C08D71 /* customTabBar */,
 				24E914091E03CA3900DD3DE4 /* naihoFireChat */,
 				24E913FA1E02B56400DD3DE4 /* realTimeChat */,
@@ -230,7 +277,7 @@
 			name = models;
 			sourceTree = "<group>";
 		};
-		24B630D41E0D231B004F7270 /* CustomScrollContainer */ = {
+		24B630D41E0D231B004F7270 /* customScrollContainer */ = {
 			isa = PBXGroup;
 			children = (
 				24B630D51E0D234E004F7270 /* CustomScrollContainerMainViewController.swift */,
@@ -238,7 +285,7 @@
 				24B630D91E0D2473004F7270 /* BViewController.swift */,
 				24B630DB1E0D248F004F7270 /* CViewController.swift */,
 			);
-			name = CustomScrollContainer;
+			name = customScrollContainer;
 			sourceTree = "<group>";
 		};
 		24C654821DE96C6B00AF8E61 /* objectiveC */ = {
@@ -428,6 +475,7 @@
 				24F950BF1DFE605A00D18141 /* GoogleService-Info.plist in Resources */,
 				247FB51D1DE81C3E00FCAFDB /* Assets.xcassets in Resources */,
 				247FB5181DE81C3E00FCAFDB /* Main.storyboard in Resources */,
+				244A7E1A1E1109680038AC4C /* Segmentio.storyboard in Resources */,
 				24E914061E02B66E00DD3DE4 /* RealTimeChat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,14 +539,17 @@
 				24E914031E02B58700DD3DE4 /* CreateChannelCell.swift in Sources */,
 				24F950A41DFA5C9500D18141 /* DemoConversation.swift in Sources */,
 				24F950A31DFA5C9500D18141 /* Conversation.swift in Sources */,
+				244A7E1C1E1109B80038AC4C /* Hints.swift in Sources */,
 				24F9507E1DF7CBFF00D18141 /* CurrencyFormatter.swift in Sources */,
 				24E9140D1E03CD1F00DD3DE4 /* NaihoChatMessengerTableViewCell.swift in Sources */,
 				247FB5151DE81C3E00FCAFDB /* RxSwiftViewController.swift in Sources */,
 				24F9508A1DF81F3F00D18141 /* CollectionViewSectionHeader.swift in Sources */,
 				24F950971DF95D6B00D18141 /* StickyHeaderCollectionViewController.swift in Sources */,
 				247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */,
+				244A7E1E1E110A170038AC4C /* SegmentioHomeViewController.swift in Sources */,
 				24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */,
 				24B630D61E0D234E004F7270 /* CustomScrollContainerMainViewController.swift in Sources */,
+				244A7E221E1121E10038AC4C /* String+Convenience.swift in Sources */,
 				24B630D81E0D244A004F7270 /* AViewController.swift in Sources */,
 				243DFD531E0B886100C08D71 /* VC1ViewController.swift in Sources */,
 				24B630DA1E0D2473004F7270 /* BViewController.swift in Sources */,
@@ -506,22 +557,29 @@
 				240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */,
 				24B630CF1E0B980E004F7270 /* VC1NextViewController.swift in Sources */,
 				24F950921DF90A7E00D18141 /* SlideShowCollectionViewCell.swift in Sources */,
+				244A7E261E119D2F0038AC4C /* UIColor+RGB.swift in Sources */,
 				247FB52B1DE83D2300FCAFDB /* BinaryKit.swift in Sources */,
 				243DFD4C1E092ACD00C08D71 /* CartViewController.swift in Sources */,
 				24B630CD1E0B94DB004F7270 /* VC2ViewController.swift in Sources */,
 				24E914021E02B58700DD3DE4 /* ChatViewController.swift in Sources */,
 				24F9509A1DF9738700D18141 /* CSStickyHeaderFlowLayout.swift in Sources */,
 				24B630D31E0CD941004F7270 /* CustomTabAnimatedTransitioning.swift in Sources */,
+				244A7E161E1108A00038AC4C /* ExampleViewController.swift in Sources */,
+				244A7E201E110A6B0038AC4C /* SideMenuViewController.swift in Sources */,
 				24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */,
 				24F950891DF81F3F00D18141 /* CollectionViewCell.swift in Sources */,
+				244A7E181E1108C30038AC4C /* ContentViewController.swift in Sources */,
 				24E9140B1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift in Sources */,
 				24B630DC1E0D248F004F7270 /* CViewController.swift in Sources */,
 				24F950811DF7EFF100D18141 /* BaseViewController.swift in Sources */,
 				24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */,
+				244A7E2C1E120C8D0038AC4C /* AppearanceConfigurator.swift in Sources */,
 				24F950A51DFA5C9500D18141 /* ChatInitalTableViewController.swift in Sources */,
 				247FB5291DE81F3300FCAFDB /* ViewSetModel.swift in Sources */,
 				24F950C11DFE629400D18141 /* FireChatLoginViewController.swift in Sources */,
+				244A7E2A1E120C6F0038AC4C /* UINavigationBar+Flat.swift in Sources */,
 				247FB51B1DE81C3E00FCAFDB /* myFirstSwift.xcdatamodeld in Sources */,
+				244A7E281E119DA00038AC4C /* UIFont+ExampleFonts.swift in Sources */,
 				24F950A61DFA5C9500D18141 /* SettingsTableViewController.swift in Sources */,
 				24E914001E02B58700DD3DE4 /* Channel.swift in Sources */,
 				24E9140F1E03D3DB00DD3DE4 /* NaihoChatMessengerModel.swift in Sources */,
@@ -529,6 +587,7 @@
 				243DFD511E0B7E5800C08D71 /* CustomTabBar.swift in Sources */,
 				24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */,
 				24F950831DF816FF00D18141 /* StickyCollectionViewController.swift in Sources */,
+				244A7E141E10FCF20038AC4C /* EmbedContainerViewController.swift in Sources */,
 				24E914041E02B58700DD3DE4 /* LoginViewController.swift in Sources */,
 				24F950A21DFA5C9500D18141 /* JSQChatViewController.swift in Sources */,
 				24E914081E03925000DD3DE4 /* UIImage+Gif.swift in Sources */,
@@ -539,6 +598,7 @@
 				24B630D11E0BDCBD004F7270 /* CustomTabBarItem.swift in Sources */,
 				24F950951DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift in Sources */,
 				24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */,
+				244A7E241E119CF90038AC4C /* SegmentioBuilder.swift in Sources */,
 				247FB5131DE81C3E00FCAFDB /* AppDelegate.swift in Sources */,
 				24E914111E03D53400DD3DE4 /* NaihoMessageModel.swift in Sources */,
 			);

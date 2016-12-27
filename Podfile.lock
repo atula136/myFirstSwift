@@ -91,6 +91,7 @@ PODS:
   - RxCocoa (3.0.1):
     - RxSwift (~> 3.0)
   - RxSwift (3.0.1)
+  - Segmentio (2.1)
   - SnapKit (3.0.2)
   - Socket.IO-Client-Swift (8.1.2)
   - SwiftSocket (2.0)
@@ -115,6 +116,7 @@ DEPENDENCIES:
   - RAMAnimatedTabBarController
   - RxCocoa
   - RxSwift
+  - Segmentio
   - SnapKit
   - Socket.IO-Client-Swift
   - SwiftSocket
@@ -164,6 +166,7 @@ SPEC CHECKSUMS:
   RAMAnimatedTabBarController: 128e0d71dc802766de575a3c59c6fdcc8e2f921b
   RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  Segmentio: ec9451dde6e5668f4b6a88c901a035faf08f8612
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   Socket.IO-Client-Swift: 542d82e6708f9901b3f6c1d134fb60fa0d09d4d1
   SwiftSocket: 279de0cc1629ccbf37a475f5d96be30024394d8d
@@ -171,6 +174,6 @@ SPEC CHECKSUMS:
   TabPageViewController: a4b46480e21251000962abad071b538679dbc2ad
   XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
 
-PODFILE CHECKSUM: a0586b1c86a83fabf4ebae4da976277eba60f749
+PODFILE CHECKSUM: 60dd7fa522b83cff3828eda0fdf5065cd721d89f
 
 COCOAPODS: 1.2.0.beta.1

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -20,7 +21,8 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
                  LoginViewController(),
                  NaihoChatMessengerViewController(),
                  CustomTabBarMainViewController(),
-                 CustomScrollContainerMainViewController()
+                 CustomScrollContainerMainViewController(),
+                 SegmentioHomeViewController()
     ]
     
     override func viewDidLoad() {
@@ -66,6 +68,11 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         else if indexPath.row == 8 {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.window?.rootViewController = items[indexPath.row]
+        }
+        else if indexPath.row == 9 {
+            AppearanceConfigurator.configureNavigationBar()
+            let segmentioVC = UIStoryboard(name: "Segmentio", bundle: nil).instantiateViewController(withIdentifier: "SegmentioHomeViewController")
+            navigationController?.pushViewController(segmentioVC, animated: true)
         }
         else {
             items[indexPath.row].title = "\((String(describing: (items[indexPath.row])).components(separatedBy: ".").last?.components(separatedBy: ":").first)!)"

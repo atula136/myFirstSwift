@@ -61,7 +61,6 @@ class CustomScrollContainerMainViewController: BaseViewController {
         
         scrollView.contentSize = CGSize(width: 3*width, height: height);
         
-        
         let viewControllers = [aViewController, bViewController, cViewController]
         
         var idx:Int = 0;

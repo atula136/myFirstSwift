@@ -36,4 +36,6 @@ target 'myFirstSwift' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+
+  pod 'Segmentio'
 end
