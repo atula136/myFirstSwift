@@ -38,4 +38,9 @@ target 'myFirstSwift' do
   pod 'RxCocoa'
 
   pod 'Segmentio'
+
+
+  pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
 end

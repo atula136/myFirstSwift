@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Segmentio
 
 class CustomScrollContainerMainViewController: BaseViewController {
     private let scrollView: UIScrollView = {
@@ -15,7 +16,7 @@ class CustomScrollContainerMainViewController: BaseViewController {
         return scrollView
     }()
     
-    private let mySegmentedControl = UISegmentedControl (items: ["One","Two","Three"])
+    var segmentioView: Segmentio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,32 +28,100 @@ class CustomScrollContainerMainViewController: BaseViewController {
         
         // segment control
         
-        let xPostion:CGFloat = 10
-        let yPostion:CGFloat = 15
-        let elementWidth:CGFloat = self.view.frame.size.width - 20
-        let elementHeight:CGFloat = 30
+        let xPostion:CGFloat = 0
+        let yPostion:CGFloat = 77
+        let elementWidth:CGFloat = UIScreen.main.bounds.width
+        let elementHeight:CGFloat = 50
         
-        mySegmentedControl.frame = CGRect(x: xPostion, y: yPostion, width: elementWidth, height: elementHeight)
+        let segmentioViewRect = CGRect(x: xPostion, y: yPostion, width: elementWidth, height: elementHeight)
+        segmentioView = Segmentio(frame: segmentioViewRect)
+        view.addSubview(segmentioView)
         
-        // Make second segment selected
-        mySegmentedControl.selectedSegmentIndex = 1
+        var content = [SegmentioItem]()
         
-        //Change text color of UISegmentedControl
-        mySegmentedControl.tintColor = UIColor.yellow
+        let tornadoItem1 = SegmentioItem(
+            title: "Tornado1",
+            image: nil
+        )
+        let tornadoItem2 = SegmentioItem(
+            title: "Tornado2",
+            image: nil
+        )
+        let tornadoItem3 = SegmentioItem(
+            title: "Tornado3",
+            image: nil
+        )
+        content.append(tornadoItem1)
+        content.append(tornadoItem2)
+        content.append(tornadoItem3)
         
-        //Change UISegmentedControl background colour
-        mySegmentedControl.backgroundColor = UIColor.black
+        let segmentioIndicatorOptions = SegmentioIndicatorOptions(
+            type: .bottom,
+            ratio: 1,
+            height: 5,
+            color: .orange
+        )
+        let segmentioHorizontalSeparatorOptions = SegmentioHorizontalSeparatorOptions(
+            type: SegmentioHorizontalSeparatorType.topAndBottom, // Top, Bottom, TopAndBottom
+            height: 1,
+            color: .gray
+        )
+        let segmentioVerticalSeparatorOptions = SegmentioVerticalSeparatorOptions(
+            ratio: 0.6, // from 0.1 to 1
+            color: .gray
+        )
         
-        // Add function to handle Value Changed events
-        mySegmentedControl.addTarget(self, action: #selector(self.segmentedValueChanged(_:)), for: .valueChanged)
+        let segmentioStates = SegmentioStates(
+            defaultState: SegmentioState(
+                backgroundColor: .clear,
+                titleFont: UIFont.systemFont(ofSize: UIFont.smallSystemFontSize),
+                titleTextColor: .black
+            ),
+            selectedState: SegmentioState(
+                backgroundColor: .orange,
+                titleFont: UIFont.systemFont(ofSize: UIFont.smallSystemFontSize),
+                titleTextColor: .white
+            ),
+            highlightedState: SegmentioState(
+                backgroundColor: UIColor.lightGray.withAlphaComponent(0.6),
+                titleFont: UIFont.boldSystemFont(ofSize: UIFont.smallSystemFontSize),
+                titleTextColor: .black
+            )
+        )
         
-        self.view.addSubview(mySegmentedControl)
+        let segmentioOptions = SegmentioOptions(
+            backgroundColor: UIColor.white,
+            maxVisibleItems: 3,
+            scrollEnabled: true,
+            indicatorOptions: segmentioIndicatorOptions,
+            horizontalSeparatorOptions: segmentioHorizontalSeparatorOptions,
+            verticalSeparatorOptions: segmentioVerticalSeparatorOptions,
+            imageContentMode: UIViewContentMode.center,
+            labelTextAlignment: NSTextAlignment.center,
+            labelTextNumberOfLines: 1,
+            segmentStates: segmentioStates,
+            animationDuration: 0.4
+        )
+        
+        segmentioView.setup(
+            content: content,
+            style: SegmentioStyle.onlyLabel,
+//            options: segmentioOptions
+            options: nil
+        )
+        
+        segmentioView.selectedSegmentioIndex = 0
+        segmentioView.valueDidChange = { segmentio, segmentIndex in
+            self.pagingScroll(idx: segmentIndex)
+        }
         
         
 //        let aViewController = AViewController();
+//        let bViewController = BViewController();
+//        let cViewController = CViewController();
         let aViewController = UINavigationController(rootViewController: AViewController())
-        let bViewController = BViewController();
-        let cViewController = CViewController();
+        let bViewController = UINavigationController(rootViewController: BViewController())
+        let cViewController = UINavigationController(rootViewController: CViewController())
         
         
         let bounds = UIScreen.main.bounds
@@ -78,8 +147,8 @@ class CustomScrollContainerMainViewController: BaseViewController {
         }
     }
     
-    func segmentedValueChanged(_ sender: UISegmentedControl)
-    {
-        print("Selected Segment Index is : \(sender.selectedSegmentIndex)")
+    func pagingScroll(idx: Int) {
+        let rect: CGRect = scrollView.bounds
+        scrollView.setContentOffset(CGPoint(x: rect.width * CGFloat(idx), y: 0), animated: true)
     }
 }

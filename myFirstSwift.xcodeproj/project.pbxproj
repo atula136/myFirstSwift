@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240216E71E83872C00CDE447 /* CarbonSwipeRefresh1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240216E61E83872C00CDE447 /* CarbonSwipeRefresh1.swift */; };
+		240216EB1E83874300CDE447 /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 240216EA1E83874300CDE447 /* CarbonSwipeRefresh.m */; };
+		240216EE1E8387AD00CDE447 /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240216EC1E8387AD00CDE447 /* Refresher.swift */; };
+		240216EF1E8387AD00CDE447 /* SimpleRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240216ED1E8387AD00CDE447 /* SimpleRefreshView.swift */; };
+		240216F11E83881E00CDE447 /* myPullRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240216F01E83881E00CDE447 /* myPullRefreshViewController.swift */; };
 		240684CF1DFFB31A0036BA17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240684CE1DFFB31A0036BA17 /* MainViewController.swift */; };
+		243162B71E1F7A9C000636B9 /* NeitNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243162B61E1F7A9C000636B9 /* NeitNavigationBar.swift */; };
 		243DFD4C1E092ACD00C08D71 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD4B1E092ACD00C08D71 /* CartViewController.swift */; };
 		243DFD4F1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */; };
 		243DFD511E0B7E5800C08D71 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */; };
@@ -34,6 +40,9 @@
 		247FB5291DE81F3300FCAFDB /* ViewSetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB5281DE81F3300FCAFDB /* ViewSetModel.swift */; };
 		247FB52B1DE83D2300FCAFDB /* BinaryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52A1DE83D2300FCAFDB /* BinaryKit.swift */; };
 		247FB52D1DE83E5B00FCAFDB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247FB52C1DE83E5B00FCAFDB /* AppModel.swift */; };
+		2484E9941E24836A006F5870 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484E98F1E24836A006F5870 /* EAIntroPage.m */; };
+		2484E9951E24836A006F5870 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484E9911E24836A006F5870 /* EAIntroView.m */; };
+		2484E9961E24836A006F5870 /* EARestrictedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2484E9931E24836A006F5870 /* EARestrictedScrollView.m */; };
 		24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */; };
 		24ABAA051E0100FD00F004CB /* RealFireChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */; };
 		24B630CD1E0B94DB004F7270 /* VC2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B630CC1E0B94DB004F7270 /* VC2ViewController.swift */; };
@@ -57,6 +66,7 @@
 		24E914111E03D53400DD3DE4 /* NaihoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914101E03D53400DD3DE4 /* NaihoMessageModel.swift */; };
 		24E914141E03D60700DD3DE4 /* NaihoUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914131E03D60700DD3DE4 /* NaihoUserModel.swift */; };
 		24E914161E077C8000DD3DE4 /* NaihoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E914151E077C8000DD3DE4 /* NaihoConstants.swift */; };
+		24EC16081E126C7F009573B4 /* NeitCustomScrollContainerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EC16071E126C7F009573B4 /* NeitCustomScrollContainerMainViewController.swift */; };
 		24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950771DF7C93C00D18141 /* Chocolate.swift */; };
 		24F9507A1DF7CA1F00D18141 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950791DF7CA1F00D18141 /* ShoppingCart.swift */; };
 		24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */; };
@@ -79,12 +89,18 @@
 		24F950BF1DFE605A00D18141 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24F950BE1DFE605A00D18141 /* GoogleService-Info.plist */; };
 		24F950C11DFE629400D18141 /* FireChatLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950C01DFE629400D18141 /* FireChatLoginViewController.swift */; };
 		24F950C31DFEAB3700D18141 /* FireChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F950C21DFEAB3700D18141 /* FireChatViewController.swift */; };
-		B2738F9B8F7797B86988A3E2 /* Pods_myFirstSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504B4C288421A43CDC532B8D /* Pods_myFirstSwift.framework */; };
+		3A520D6B696DC4F38A87249D /* Pods_myFirstSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A51B1EE6BC326ADFE3F69E /* Pods_myFirstSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E8D20784C68E029C44FFDEF /* Pods-myFirstSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		240216E61E83872C00CDE447 /* CarbonSwipeRefresh1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarbonSwipeRefresh1.swift; sourceTree = "<group>"; };
+		240216E91E83874300CDE447 /* CarbonSwipeRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonSwipeRefresh.h; sourceTree = "<group>"; };
+		240216EA1E83874300CDE447 /* CarbonSwipeRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonSwipeRefresh.m; sourceTree = "<group>"; };
+		240216EC1E8387AD00CDE447 /* Refresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
+		240216ED1E8387AD00CDE447 /* SimpleRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleRefreshView.swift; sourceTree = "<group>"; };
+		240216F01E83881E00CDE447 /* myPullRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myPullRefreshViewController.swift; sourceTree = "<group>"; };
 		240684CE1DFFB31A0036BA17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		243162B61E1F7A9C000636B9 /* NeitNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeitNavigationBar.swift; sourceTree = "<group>"; };
 		243DFD4B1E092ACD00C08D71 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		243DFD4E1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarMainViewController.swift; sourceTree = "<group>"; };
 		243DFD501E0B7E5800C08D71 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -113,6 +129,12 @@
 		247FB5281DE81F3300FCAFDB /* ViewSetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSetModel.swift; sourceTree = "<group>"; };
 		247FB52A1DE83D2300FCAFDB /* BinaryKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryKit.swift; sourceTree = "<group>"; };
 		247FB52C1DE83E5B00FCAFDB /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		2484E98E1E24836A006F5870 /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		2484E98F1E24836A006F5870 /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		2484E9901E24836A006F5870 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		2484E9911E24836A006F5870 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
+		2484E9921E24836A006F5870 /* EARestrictedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EARestrictedScrollView.h; sourceTree = "<group>"; };
+		2484E9931E24836A006F5870 /* EARestrictedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EARestrictedScrollView.m; sourceTree = "<group>"; };
 		24ABAA021E0007F700F004CB /* StickyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		24ABAA041E0100FD00F004CB /* RealFireChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealFireChatViewController.swift; sourceTree = "<group>"; };
 		24B630CC1E0B94DB004F7270 /* VC2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +159,7 @@
 		24E914101E03D53400DD3DE4 /* NaihoMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoMessageModel.swift; sourceTree = "<group>"; };
 		24E914131E03D60700DD3DE4 /* NaihoUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoUserModel.swift; sourceTree = "<group>"; };
 		24E914151E077C8000DD3DE4 /* NaihoConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaihoConstants.swift; sourceTree = "<group>"; };
+		24EC16071E126C7F009573B4 /* NeitCustomScrollContainerMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeitCustomScrollContainerMainViewController.swift; sourceTree = "<group>"; };
 		24F950771DF7C93C00D18141 /* Chocolate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		24F950791DF7CA1F00D18141 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		24F9507B1DF7CBB100D18141 /* ChocolateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateCell.swift; sourceTree = "<group>"; };
@@ -161,8 +184,9 @@
 		24F950BE1DFE605A00D18141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24F950C01DFE629400D18141 /* FireChatLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireChatLoginViewController.swift; sourceTree = "<group>"; };
 		24F950C21DFEAB3700D18141 /* FireChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireChatViewController.swift; sourceTree = "<group>"; };
-		26665E57A1AB3AB07AA41858 /* Pods-myFirstSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift.release.xcconfig"; sourceTree = "<group>"; };
-		504B4C288421A43CDC532B8D /* Pods_myFirstSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myFirstSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85EBD1E04F167DD9D2E2655E /* Pods-myFirstSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		8AF2FBF7FCDD3FF4458659BD /* Pods-myFirstSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F1A51B1EE6BC326ADFE3F69E /* Pods_myFirstSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myFirstSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,13 +194,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2738F9B8F7797B86988A3E2 /* Pods_myFirstSwift.framework in Frameworks */,
+				3A520D6B696DC4F38A87249D /* Pods_myFirstSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240216E51E8386D500CDE447 /* myPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				240216E81E83874300CDE447 /* CarbonSwipeRefresh */,
+				240216E61E83872C00CDE447 /* CarbonSwipeRefresh1.swift */,
+				240216EC1E8387AD00CDE447 /* Refresher.swift */,
+				240216ED1E8387AD00CDE447 /* SimpleRefreshView.swift */,
+				240216F01E83881E00CDE447 /* myPullRefreshViewController.swift */,
+			);
+			name = myPullRefresh;
+			sourceTree = "<group>";
+		};
+		240216E81E83874300CDE447 /* CarbonSwipeRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				240216E91E83874300CDE447 /* CarbonSwipeRefresh.h */,
+				240216EA1E83874300CDE447 /* CarbonSwipeRefresh.m */,
+			);
+			path = CarbonSwipeRefresh;
+			sourceTree = "<group>";
+		};
 		240684CD1DFFB2D50036BA17 /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +270,7 @@
 				247FB5111DE81C3E00FCAFDB /* myFirstSwift */,
 				247FB5101DE81C3E00FCAFDB /* Products */,
 				F2A47450CEED554CF5D880F6 /* Frameworks */,
-				EEF191F40089E0A0D338D151 /* Pods */,
+				E68CE57D51FB10726A5A169B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,6 +285,7 @@
 		247FB5111DE81C3E00FCAFDB /* myFirstSwift */ = {
 			isa = PBXGroup;
 			children = (
+				240216E51E8386D500CDE447 /* myPullRefresh */,
 				244A7E121E10F7BF0038AC4C /* segmentioUsage */,
 				24B630D41E0D231B004F7270 /* customScrollContainer */,
 				243DFD4D1E0B7A5A00C08D71 /* customTabBar */,
@@ -255,6 +301,7 @@
 				24C654821DE96C6B00AF8E61 /* objectiveC */,
 				247FB5271DE81F1500FCAFDB /* models */,
 				247FB5121DE81C3E00FCAFDB /* AppDelegate.swift */,
+				243162B61E1F7A9C000636B9 /* NeitNavigationBar.swift */,
 				247FB5161DE81C3E00FCAFDB /* Main.storyboard */,
 				247FB51C1DE81C3E00FCAFDB /* Assets.xcassets */,
 				247FB51E1DE81C3E00FCAFDB /* LaunchScreen.storyboard */,
@@ -277,6 +324,19 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		2484E98D1E248351006F5870 /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				2484E98E1E24836A006F5870 /* EAIntroPage.h */,
+				2484E98F1E24836A006F5870 /* EAIntroPage.m */,
+				2484E9901E24836A006F5870 /* EAIntroView.h */,
+				2484E9911E24836A006F5870 /* EAIntroView.m */,
+				2484E9921E24836A006F5870 /* EARestrictedScrollView.h */,
+				2484E9931E24836A006F5870 /* EARestrictedScrollView.m */,
+			);
+			name = EAIntroView;
+			sourceTree = "<group>";
+		};
 		24B630D41E0D231B004F7270 /* customScrollContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +344,7 @@
 				24B630D71E0D244A004F7270 /* AViewController.swift */,
 				24B630D91E0D2473004F7270 /* BViewController.swift */,
 				24B630DB1E0D248F004F7270 /* CViewController.swift */,
+				24EC16071E126C7F009573B4 /* NeitCustomScrollContainerMainViewController.swift */,
 			);
 			name = customScrollContainer;
 			sourceTree = "<group>";
@@ -291,6 +352,7 @@
 		24C654821DE96C6B00AF8E61 /* objectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				2484E98D1E248351006F5870 /* EAIntroView */,
 				24C654811DE96BB900AF8E61 /* myFirstSwift-Bridging-Header.h */,
 			);
 			name = objectiveC;
@@ -389,11 +451,11 @@
 			name = fireChat;
 			sourceTree = "<group>";
 		};
-		EEF191F40089E0A0D338D151 /* Pods */ = {
+		E68CE57D51FB10726A5A169B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E8D20784C68E029C44FFDEF /* Pods-myFirstSwift.debug.xcconfig */,
-				26665E57A1AB3AB07AA41858 /* Pods-myFirstSwift.release.xcconfig */,
+				85EBD1E04F167DD9D2E2655E /* Pods-myFirstSwift.debug.xcconfig */,
+				8AF2FBF7FCDD3FF4458659BD /* Pods-myFirstSwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -402,7 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				24F9508B1DF8267200D18141 /* CSStickyHeaderFlowLayout.framework */,
-				504B4C288421A43CDC532B8D /* Pods_myFirstSwift.framework */,
+				F1A51B1EE6BC326ADFE3F69E /* Pods_myFirstSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -414,12 +476,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 247FB5241DE81C3E00FCAFDB /* Build configuration list for PBXNativeTarget "myFirstSwift" */;
 			buildPhases = (
-				17596CBE23ED6252C75EF578 /* [CP] Check Pods Manifest.lock */,
+				DD011E8FCBC336CD83CBD620 /* [CP] Check Pods Manifest.lock */,
 				247FB50B1DE81C3E00FCAFDB /* Sources */,
 				247FB50C1DE81C3E00FCAFDB /* Frameworks */,
 				247FB50D1DE81C3E00FCAFDB /* Resources */,
-				27DC7FFD7A29B65A82465EA1 /* [CP] Embed Pods Frameworks */,
-				D5457CD096D5676C3FCECEA3 /* [CP] Copy Pods Resources */,
+				4AF84A807457C0DD43B6DA75 /* [CP] Embed Pods Frameworks */,
+				789286A2186D76B9DA1423F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -443,7 +505,7 @@
 					247FB50E1DE81C3E00FCAFDB = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = AUP8F3X3UR;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -483,22 +545,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17596CBE23ED6252C75EF578 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		27DC7FFD7A29B65A82465EA1 /* [CP] Embed Pods Frameworks */ = {
+		4AF84A807457C0DD43B6DA75 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,7 +560,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5457CD096D5676C3FCECEA3 /* [CP] Copy Pods Resources */ = {
+		789286A2186D76B9DA1423F2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -526,6 +573,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myFirstSwift/Pods-myFirstSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD011E8FCBC336CD83CBD620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -549,6 +611,7 @@
 				244A7E1E1E110A170038AC4C /* SegmentioHomeViewController.swift in Sources */,
 				24ABAA031E0007F700F004CB /* StickyCollectionViewFlowLayout.swift in Sources */,
 				24B630D61E0D234E004F7270 /* CustomScrollContainerMainViewController.swift in Sources */,
+				2484E9941E24836A006F5870 /* EAIntroPage.m in Sources */,
 				244A7E221E1121E10038AC4C /* String+Convenience.swift in Sources */,
 				24B630D81E0D244A004F7270 /* AViewController.swift in Sources */,
 				243DFD531E0B886100C08D71 /* VC1ViewController.swift in Sources */,
@@ -569,11 +632,15 @@
 				24E914011E02B58700DD3DE4 /* ChannelListViewController.swift in Sources */,
 				24F950891DF81F3F00D18141 /* CollectionViewCell.swift in Sources */,
 				244A7E181E1108C30038AC4C /* ContentViewController.swift in Sources */,
+				24EC16081E126C7F009573B4 /* NeitCustomScrollContainerMainViewController.swift in Sources */,
 				24E9140B1E03CC4300DD3DE4 /* NaihoChatMessengerViewController.swift in Sources */,
 				24B630DC1E0D248F004F7270 /* CViewController.swift in Sources */,
 				24F950811DF7EFF100D18141 /* BaseViewController.swift in Sources */,
 				24F950781DF7C93C00D18141 /* Chocolate.swift in Sources */,
+				243162B71E1F7A9C000636B9 /* NeitNavigationBar.swift in Sources */,
+				240216E71E83872C00CDE447 /* CarbonSwipeRefresh1.swift in Sources */,
 				244A7E2C1E120C8D0038AC4C /* AppearanceConfigurator.swift in Sources */,
+				240216F11E83881E00CDE447 /* myPullRefreshViewController.swift in Sources */,
 				24F950A51DFA5C9500D18141 /* ChatInitalTableViewController.swift in Sources */,
 				247FB5291DE81F3300FCAFDB /* ViewSetModel.swift in Sources */,
 				24F950C11DFE629400D18141 /* FireChatLoginViewController.swift in Sources */,
@@ -595,12 +662,17 @@
 				24F950881DF81F3F00D18141 /* CollectionParallaxHeader.swift in Sources */,
 				243DFD4F1E0B7A8000C08D71 /* CustomTabBarMainViewController.swift in Sources */,
 				24E914161E077C8000DD3DE4 /* NaihoConstants.swift in Sources */,
+				240216EE1E8387AD00CDE447 /* Refresher.swift in Sources */,
+				240216EF1E8387AD00CDE447 /* SimpleRefreshView.swift in Sources */,
 				24B630D11E0BDCBD004F7270 /* CustomTabBarItem.swift in Sources */,
 				24F950951DF95D1C00D18141 /* StickyHeaderCollectionViewCell.swift in Sources */,
 				24F9507C1DF7CBB100D18141 /* ChocolateCell.swift in Sources */,
+				240216EB1E83874300CDE447 /* CarbonSwipeRefresh.m in Sources */,
 				244A7E241E119CF90038AC4C /* SegmentioBuilder.swift in Sources */,
+				2484E9961E24836A006F5870 /* EARestrictedScrollView.m in Sources */,
 				247FB5131DE81C3E00FCAFDB /* AppDelegate.swift in Sources */,
 				24E914111E03D53400DD3DE4 /* NaihoMessageModel.swift in Sources */,
+				2484E9951E24836A006F5870 /* EAIntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +797,7 @@
 		};
 		247FB5251DE81C3E00FCAFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E8D20784C68E029C44FFDEF /* Pods-myFirstSwift.debug.xcconfig */;
+			baseConfigurationReference = 85EBD1E04F167DD9D2E2655E /* Pods-myFirstSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -741,7 +813,7 @@
 		};
 		247FB5261DE81C3E00FCAFDB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26665E57A1AB3AB07AA41858 /* Pods-myFirstSwift.release.xcconfig */;
+			baseConfigurationReference = 8AF2FBF7FCDD3FF4458659BD /* Pods-myFirstSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

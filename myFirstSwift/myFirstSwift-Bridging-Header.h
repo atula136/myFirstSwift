@@ -10,5 +10,11 @@
 #define myFirstSwift_Bridging_Header_h
 
 //#import <CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout.h>
+//#import "EAIntroView/EAIntroView.h"
+//#import "EAIntroView/EAIntroPage.h"
+#import "EARestrictedScrollView.h"
+#import "EAIntroPage.h"
+#import "EAIntroView.h"
+#import "CarbonSwipeRefresh.h"
 
 #endif /* myFirstSwift_Bridging_Header_h */
